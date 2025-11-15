@@ -1,0 +1,26 @@
+def f_to_c(fahren):
+    celcius = round((fahren-32)*5/9)
+    return celcius
+
+def c_to_f(celcius):
+  fahren = round((celcius*9/5)+32)
+  print("Celcius:",celcius,"Fahrenheit:",fahren)
+
+if __name__ == "__main__":
+  print("~~~~Covert Here Temperature~~~~")
+  print("2-->Fahrenheit to Celcius")
+  print("1-->Celcius to Fahrenheit")
+  choice = int(input("Enter Your choice Here:"))
+
+  if choice == 2:
+    fahren = int(input("Enter value for Fahrenheit"))
+    celcius = f_to_c(fahren)
+    print("Fahrenheit:",fahren,"=",celcius,"Celcius")
+
+  elif choice == 1:
+    celcius = int(input("Enter value for Celcius"))
+    c_to_f(celcius)
+
+  else:
+    print("The Given Input Is Wrong!")
+    print("The program is Ending!! Thank You")
