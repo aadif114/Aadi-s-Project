@@ -1,0 +1,14 @@
+class train:
+    def __init__(self, name, time, location):
+        self.name = name
+        self.time = time
+        self.location = location
+
+    def greet(self):
+        print("Dear passengers, your train " + self.name + " at time of " + self.time + " for the place named " + self.location)
+
+t1 = train("Vande Bharat", "12:30", "Delhi")
+t2 = train("Lokmanya Tilak", "8:30", "Gujarat")
+t3 = train("Mahanagri", "9:45", "Varansi")
+t2.greet()
+t3.greet()
